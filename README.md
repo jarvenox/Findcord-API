@@ -5,14 +5,14 @@
   </p>
 </div>
 
-# Mys API
+# FindCord API
 
-Mys API, kullanıcılara çeşitli bilgilere erişim sağlayan bir API'dir. API, farklı endpointler aracılığıyla veriler sunar ve çeşitli hizmetler sağlar.
+FindCord API, kullanıcılara çeşitli bilgilere erişim sağlayan bir API'dir. API, farklı endpointler aracılığıyla veriler sunar ve çeşitli hizmetler sağlar.
 
 ## API Hakkında
 
-- Mys API, kullanıcıların günlük hayatlarında ihtiyaç duydukları çeşitli bilgilere erişim sağlar. Hava durumu, burç bilgisi, döviz kuru, namaz vakitleri gibi çeşitli hizmetler sunar.
-- Mys API'nin en önemli özelliği ise discord kullanıcılarını stalklamak.
+- FindCord API, kullanıcıların günlük hayatlarında ihtiyaç duydukları çeşitli bilgilere erişim sağlar. Hava durumu, burç bilgisi, döviz kuru, namaz vakitleri gibi çeşitli hizmetler sunar.
+- FindCord'nin en önemli özelliği ise discord kullanıcılarını stalklamak.
 
 ## Kullanım
 
@@ -42,15 +42,14 @@ Aşağıdaki örnek kod, Axios kullanarak bir API'den veri çekmek için kullan�
 const axios = require('axios');
 
 async function fetchData() {
-    const apiKey = 'test'; // API anahtarınızı buraya ekleyin
-    const apiUrl = `https://discordpanel.vercel.app/api/user/{id}`; // İstek atılacak API URL'sini belirtin
+    const apiUrl = `https://api.findcord.com/api/user/{id}`; // İstek atılacak API URL'sini belirtin
     
     try {
         const response = await axios.get(apiUrl);
         
         console.log("İstek Başarılı!", response.data);
 
-        const otherNames = response.data["GuildsDisplayNames"].map((x) => x).join("\n");
+        const otherNames = response.data["DisplayNames"].map((x) => x).join("\n");
         console.log(otherNames);
     } catch (error) {
         console.error('Hata:', error);
