@@ -32,7 +32,7 @@ API'yi kullanmak için çeşitli endpointler bulunmaktadır. İşte bazı örnek
 Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](https://api.findcord.com/document) sayfasını ziyaret edebilirsiniz.
 
 ## Npm Paketiyle Veri Çekmek Icin
-- https://www.npmjs.com/package/mys-api.js
+- https://www.npmjs.com/package/findcord
 
 ## Veri Çekme Örneği
 
