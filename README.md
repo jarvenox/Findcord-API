@@ -29,7 +29,7 @@ API'yi kullanmak için çeşitli endpointler bulunmaktadır. İşte bazı örnek
 - `/namaz/{sehir}/{ilce}` - Namaz Vakitleri
 - `/nsfw` - NSFW İçerik //
 
-Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](https://discordpanel.vercel.app/document/) sayfasını ziyaret edebilirsiniz.
+Daha fazla endpoint ve kullanım bilgisi için [API Dökümantasyonu](https://api.findcord.com/document) sayfasını ziyaret edebilirsiniz.
 
 ## Npm Paketiyle Veri Çekmek Icin
 - https://www.npmjs.com/package/mys-api.js
@@ -49,8 +49,6 @@ async function fetchData() {
         
         console.log("İstek Başarılı!", response.data);
 
-        const otherNames = response.data["DisplayNames"].map((x) => x).join("\n");
-        console.log(otherNames);
     } catch (error) {
         console.error('Hata:', error);
     }
@@ -60,10 +58,10 @@ fetchData();
 ```
 
 ## Örnek Ekran Görüntüleri
+![Örnek Ekran Görüntüsü](https://github.com/user-attachments/assets/749ebe5f-efa5-475f-a123-c536bba2ff01)
 
-![Örnek Ekran Görüntüsü 1](https://github.com/mysteriouss3/Mys-Api/assets/142053394/76141f14-6fe8-4b7b-a91a-7103d3cbac30)
+![Örnek Ekran Görüntüsü 2](https://github.com/user-attachments/assets/0cc75585-ec71-4603-a8c7-11f305ab646b)
 
-![Örnek Ekran Görüntüsü 2](https://github.com/mysteriouss3/Mys-Api/assets/142053394/19ba8a34-515b-41ab-a8e6-26f1c579e90a)
 
 ## Lisans
 
